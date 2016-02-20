@@ -1,0 +1,44 @@
+{
+    "name": "eslint-config-holidaycheck",
+    "version": "0.1.0",
+    "description": "Shareable ESLint config from HolidayCheck",
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "mocha test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/holidaycheck/eslint-config-holidaycheck.git"
+    },
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "baseConfig.json",
+        "cli.js",
+        "createBaseConfig.js",
+        "browser.js",
+        "README.md",
+        "es2015/",
+        "LICENSE"
+    ],
+    "dependencies": {
+        "lodash.clonedeep": "^3.0.2",
+        "object-assign": "^4.0.1"
+    },
+    "peerDependencies": {
+        "eslint": "~1.10.1"
+    },
+    "devDependencies": {
+        "chai": "3.4.0",
+        "eslint": "1.10.1",
+        "espree": "2.2.5",
+        "mocha": "2.3.3"
+    },
+    "keywords": [
+        "eslint",
+        "eslintconfig"
+    ],
+    "author": "Mathias Schreck <mathias.schreck@holidaycheck.com>",
+    "license": "MIT"
+}

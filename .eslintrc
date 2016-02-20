@@ -1,0 +1,6 @@
+{
+    "extends": "./baseConfig.json",
+    "env": {
+        "node": true
+    }
+}
