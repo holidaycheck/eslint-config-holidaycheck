@@ -48,7 +48,7 @@ describe('eslint-config-holidaycheck', function () {
         var features = Object.keys(ecmaFeatures);
 
         features.forEach(function (featureName) {
-            expect(eslintConfigHolidaycheck).to.have.deep.property('ecmaFeatures.' + featureName);
+            expect(eslintConfigHolidaycheck).to.have.deep.property('parserOptions.ecmaFeatures.' + featureName);
         });
     });
 });
