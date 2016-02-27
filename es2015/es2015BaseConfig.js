@@ -5,30 +5,9 @@ var assign = require('object-assign'),
     config = require('../createBaseConfig')();
 
 config.env.es6 = true;
-config.ecmaFeatures = assign({}, config.ecmaFeatures, {
-    arrowFunctions: true,
-    blockBindings: true,
-    regexUFlag: true,
-    regexYFlag: true,
-    templateStrings: true,
-    binaryLiterals: true,
-    octalLiterals: true,
-    unicodeCodePointEscapes: true,
-    superInFunctions: true,
-    defaultParams: true,
-    restParams: true,
-    forOf: true,
-    objectLiteralComputedProperties: true,
-    objectLiteralShorthandMethods: true,
-    objectLiteralShorthandProperties: true,
-    objectLiteralDuplicateProperties: true,
-    generators: true,
-    destructuring: true,
-    classes: true,
-    spread: true,
-    newTarget: true,
-
-    modules: true
+config.parserOptions = assign({}, config.parserOptions, {
+    sourceType: 'module',
+    ecmaVersion: 6
 });
 
 config.rules = assign({}, config.rules, {
@@ -36,12 +15,13 @@ config.rules = assign({}, config.rules, {
     'arrow-spacing': [ 2, { before: true, after: true } ],
     'constructor-super': 2,
     'generator-star-spacing': [ 2, { before: true, after: false } ],
-    'no-arrow-condition': 2,
+    'no-confusing-arrow': 2,
     'no-class-assign': 2,
     'no-const-assign': 2,
     'no-dupe-class-members': 2,
     'no-empty-pattern': 2,
     'no-invalid-this': 0,
+    'no-new-symbol': 2,
     'no-this-before-super': 2,
     'no-var': 2,
     'object-shorthand': [ 2, 'always' ],
