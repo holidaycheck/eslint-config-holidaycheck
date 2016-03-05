@@ -4,6 +4,6 @@ var config = require('./createBaseConfig')();
 
 config.env.browser = true;
 
-config.rules.strict = [ 2, 'function' ];
+config.rules.strict = [ 'error', 'function' ];
 
 module.exports = config;

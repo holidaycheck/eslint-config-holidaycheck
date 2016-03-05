@@ -2,9 +2,9 @@
 
 var config = require('./createBaseConfig')();
 
-config.rules['no-console'] = 0;
-config.rules['no-process-env'] = 0;
-config.rules['no-process-exit'] = 0;
-config.rules['no-sync'] = 0;
+config.rules['no-console'] = 'off';
+config.rules['no-process-env'] = 'off';
+config.rules['no-process-exit'] = 'off';
+config.rules['no-sync'] = 'off';
 
 module.exports = config;
