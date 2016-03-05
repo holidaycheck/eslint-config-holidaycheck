@@ -11,26 +11,26 @@ config.parserOptions = assign({}, config.parserOptions, {
 });
 
 config.rules = assign({}, config.rules, {
-    'arrow-parens': 2,
-    'arrow-spacing': [ 2, { before: true, after: true } ],
-    'constructor-super': 2,
-    'generator-star-spacing': [ 2, { before: true, after: false } ],
-    'no-confusing-arrow': 2,
-    'no-class-assign': 2,
-    'no-const-assign': 2,
-    'no-dupe-class-members': 2,
-    'no-empty-pattern': 2,
-    'no-invalid-this': 0,
-    'no-new-symbol': 2,
-    'no-this-before-super': 2,
-    'no-var': 2,
-    'object-shorthand': [ 2, 'always' ],
-    'one-var': [ 2, { var: 'always', let: 'never', const: 'never' } ],
-    'prefer-const': 2,
-    'prefer-reflect': 2,
-    'prefer-spread': 2,
-    'prefer-template': 2,
-    'require-yield': 2
+    'arrow-parens': 'error',
+    'arrow-spacing': [ 'error', { before: true, after: true } ],
+    'constructor-super': 'error',
+    'generator-star-spacing': [ 'error', { before: true, after: false } ],
+    'no-confusing-arrow': 'error',
+    'no-class-assign': 'error',
+    'no-const-assign': 'error',
+    'no-dupe-class-members': 'error',
+    'no-empty-pattern': 'error',
+    'no-invalid-this': 'off',
+    'no-new-symbol': 'error',
+    'no-this-before-super': 'error',
+    'no-var': 'error',
+    'object-shorthand': [ 'error', 'always' ],
+    'one-var': [ 'error', { var: 'always', let: 'never', const: 'never' } ],
+    'prefer-const': 'error',
+    'prefer-reflect': 'error',
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
+    'require-yield': 'error'
 });
 
 module.exports = function () {
