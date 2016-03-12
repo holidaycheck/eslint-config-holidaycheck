@@ -28,11 +28,11 @@
         "object-assign": "^4.0.1"
     },
     "peerDependencies": {
-        "eslint": "~2.3.0"
+        "eslint": "~2.4.0"
     },
     "devDependencies": {
         "chai": "3.5.0",
-        "eslint": "2.3.0",
+        "eslint": "2.4.0",
         "espree": "3.1.1",
         "mocha": "2.4.5",
         "pr-log": "1.4.0"
