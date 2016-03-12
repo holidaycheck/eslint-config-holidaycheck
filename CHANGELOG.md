@@ -1,3 +1,10 @@
+## 0.4.0 (March 12, 2016)
+
+### Dependency Upgrades
+
+* Update eslint to version 2.4.0 🚀 (#7)
+* Update pr-log to version 1.4.0 🚀 (#6)
+
 ## 0.3.0 (March 5, 2016)
 
 ### Build-Related
@@ -16,7 +23,6 @@
 ## 0.2.0 (February 27, 2016)
 
 Update to ESLint 2.x.
-
 
 ## 0.1.0 (February 20, 2016)
 
