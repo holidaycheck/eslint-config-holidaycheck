@@ -19,6 +19,7 @@ config.rules = assign({}, config.rules, {
     'no-class-assign': 'error',
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
+    'no-duplicate-imports': 'error',
     'no-empty-pattern': 'error',
     'no-invalid-this': 'off',
     'no-new-symbol': 'error',
