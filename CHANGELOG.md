@@ -1,3 +1,15 @@
+## 0.7.0 (April 13, 2016)
+
+### Enhancements
+
+* Enable `newline-before-return` rule (#17)
+* Fix indentation in baseConfig.json (#16)
+
+### Dependency Upgrades
+
+* Update eslint to version 2.7.0 🚀 (#15)
+* chore(package): update eslint to version 2.6.0 (#14)
+
 ## 0.6.0 (April 1, 2016)
 
 ### Enhancements
