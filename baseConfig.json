@@ -178,7 +178,7 @@
         "no-with": "error",
         "no-magic-numbers": "off",
         "array-bracket-spacing": [ "error", "always" ],
-         "arrow-body-style": "off",
+        "arrow-body-style": "off",
         "arrow-parens": "off",
         "arrow-spacing": "off",
         "accessor-pairs": "off",
