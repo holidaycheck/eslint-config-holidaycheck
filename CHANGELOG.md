@@ -1,3 +1,15 @@
+## 0.8.0 (May 17, 2016)
+
+### Dependency Upgrades
+
+* Update eslint to version 2.10.2 🚀 (#23)
+* Update espree to version 3.1.4 🚀 (#19)
+* Update eslint to version 2.8.0 🚀 (#18)
+
+### Enhancements
+
+* Revert "Enable `newline-before-return` rule" (#24)
+
 ## 0.7.0 (April 13, 2016)
 
 ### Enhancements
