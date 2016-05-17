@@ -222,7 +222,7 @@
         "new-cap": "error",
         "new-parens": "error",
         "newline-after-var": [ "off", "always" ],
-        "newline-before-return": "error",
+        "newline-before-return": "off",
         "newline-per-chained-call": "off",
         "object-curly-spacing": [ "error", "always" ],
         "object-shorthand": "off",
