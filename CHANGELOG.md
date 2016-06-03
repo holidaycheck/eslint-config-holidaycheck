@@ -1,3 +1,11 @@
+## 0.9.0 (June 3, 2016)
+
+### Dependency Upgrades
+
+* Update eslint to version 2.11.1 🚀 (#31)
+* Update espree to version 3.1.5 🚀 (#30)
+* Update mocha to version 2.5.3 🚀 (#28)
+
 ## 0.8.0 (May 17, 2016)
 
 ### Dependency Upgrades
