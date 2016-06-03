@@ -31,7 +31,8 @@ config.rules = assign({}, config.rules, {
     'prefer-reflect': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'require-yield': 'error'
+    'require-yield': 'error',
+    'no-useless-rename': 'error'
 });
 
 module.exports = function () {
