@@ -32,7 +32,7 @@
     },
     "devDependencies": {
         "chai": "3.5.0",
-        "eslint": "2.10.2",
+        "eslint": "2.11.1",
         "espree": "3.1.5",
         "mocha": "2.5.3",
         "pr-log": "1.4.0"
