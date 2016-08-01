@@ -32,7 +32,8 @@ config.rules = assign({}, config.rules, {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'require-yield': 'error',
-    'no-useless-rename': 'error'
+    'no-useless-rename': 'error',
+    'rest-spread-spacing': [ 'error', 'never' ]
 });
 
 module.exports = function () {
