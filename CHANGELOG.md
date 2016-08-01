@@ -1,3 +1,11 @@
+## 0.10.0 (August 1, 2016)
+
+### Dependency Upgrades
+
+* Update pr-log to version 1.5.0 🚀 (#32)
+* Update to ESLint 3.2.2 (#34)
+
+
 ## 0.9.0 (June 3, 2016)
 
 ### Dependency Upgrades
