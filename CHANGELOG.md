@@ -1,3 +1,9 @@
+## 0.10.1 (November 16, 2016)
+
+### Bug Fixes
+
+* Disable prefer-rest-params for ES5 config (#36)
+
 ## 0.10.0 (August 1, 2016)
 
 ### Dependency Upgrades
