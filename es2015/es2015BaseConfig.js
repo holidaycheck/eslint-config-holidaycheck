@@ -33,7 +33,8 @@ config.rules = assign({}, config.rules, {
     'prefer-template': 'error',
     'require-yield': 'error',
     'no-useless-rename': 'error',
-    'rest-spread-spacing': [ 'error', 'never' ]
+    'rest-spread-spacing': [ 'error', 'never' ],
+    'prefer-rest-params': 'error'
 });
 
 module.exports = function () {
