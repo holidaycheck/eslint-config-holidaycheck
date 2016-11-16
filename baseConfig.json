@@ -242,7 +242,7 @@
         "operator-linebreak": [ "error", "after" ],
         "padded-blocks": [ "error", { "blocks": "never", "switches": "never", "classes": "never" } ],
         "prefer-arrow-callback": "off",
-        "prefer-rest-params": "error",
+        "prefer-rest-params": "off",
         "quote-props": [ "error", "as-needed" ],
         "quotes": [ "error", "single" ],
         "radix": "error",
