@@ -1,46 +1,54 @@
 'use strict';
 
 var expect = require('chai').expect,
-    eslintDefaults = require('eslint/conf/eslint.json'),
+    eslintDefaults = require('eslint/conf/eslint-all'),
     eslintReplacements = require('eslint/conf/replacements.json'),
     eslintEnvironments = require('eslint/conf/environments'),
     ecmaFeatures = require('espree/lib/features'),
     eslintConfigHolidaycheck = require('../');
 
 describe('eslint-config-holidaycheck', function () {
-    it('should configure every eslint rule', function () {
+    describe('eslint core rules', function () {
         var rules = Object.keys(eslintDefaults.rules);
 
         rules.forEach(function (ruleName) {
-            expect(eslintConfigHolidaycheck).to.have.deep.property('rules.' + ruleName);
+            it('should configure ' + ruleName, function () {
+                expect(eslintConfigHolidaycheck).to.have.deep.property('rules.' + ruleName);
+            });
         });
     });
 
-    it('should not include rules configuration for remove core rules', function () {
+    describe('removed core rules', function () {
         var rules = Object.keys(eslintConfigHolidaycheck.rules);
 
         rules.forEach(function (ruleName) {
             var isCoreRule = ruleName.indexOf('/') === -1;
 
             if (isCoreRule) {
-                expect(eslintDefaults).to.have.deep.property('rules.' + ruleName);
+                it('should only contain ' + ruleName + ' if it still exists upstream', function () {
+                    expect(eslintDefaults).to.have.deep.property('rules.' + ruleName);
+                });
             }
         });
     });
 
-    it('should not have deprecated rules configured', function () {
+    describe('deprecated rules', function () {
         var rules = Object.keys(eslintReplacements.rules);
 
         rules.forEach(function (ruleName) {
-            expect(eslintConfigHolidaycheck).not.to.have.deep.property('rules.' + ruleName);
+            it('should not have deprecated rule ' + ruleName + ' configured', function () {
+                expect(eslintConfigHolidaycheck).not.to.have.deep.property('rules.' + ruleName);
+            });
         });
     });
 
-    it('should configure all environments', function () {
+    describe('environments', function () {
         var environments = Object.keys(eslintEnvironments);
 
         environments.forEach(function (envName) {
-            expect(eslintConfigHolidaycheck).to.have.deep.property('env.' + envName);
+            it('should configure environment ' + envName, function () {
+                expect(eslintConfigHolidaycheck).to.have.deep.property('env.' + envName);
+            });
         });
     });
 
@@ -50,5 +58,13 @@ describe('eslint-config-holidaycheck', function () {
         features.forEach(function (featureName) {
             expect(eslintConfigHolidaycheck).to.have.deep.property('parserOptions.ecmaFeatures.' + featureName);
         });
+    });
+
+    it('should configure the correct ecmaVersion', function () {
+        expect(eslintConfigHolidaycheck).to.have.deep.property('parserOptions.ecmaVersion', 5);
+    });
+
+    it('should configure the correct sourceType', function () {
+        expect(eslintConfigHolidaycheck).to.have.deep.property('parserOptions.sourceType', 'script');
     });
 });
