@@ -28,13 +28,15 @@ config.rules = assign({}, config.rules, {
     'object-shorthand': [ 'error', 'always' ],
     'one-var': [ 'error', { var: 'always', let: 'never', const: 'never' } ],
     'prefer-const': 'error',
-    'prefer-reflect': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'require-yield': 'error',
     'no-useless-rename': 'error',
     'rest-spread-spacing': [ 'error', 'never' ],
-    'prefer-rest-params': 'error'
+    'prefer-rest-params': 'error',
+    'prefer-numeric-literals': 'error',
+    'symbol-description': 'error',
+    'template-tag-spacing': [ 'error', 'never' ]
 });
 
 module.exports = function () {
