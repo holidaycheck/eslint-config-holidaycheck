@@ -1,3 +1,14 @@
+## 0.11.0 (April 24, 2017)
+
+### Dependency Upgrades
+
+* Update ESLint to 3.19.0 (#38)
+* Update devDependencies (#37)
+
+### Build-Related
+
+* Update node.js versions for travis builds (#39)
+
 ## 0.10.1 (November 16, 2016)
 
 ### Bug Fixes
