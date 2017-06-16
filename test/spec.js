@@ -13,7 +13,7 @@ describe('eslint-config-holidaycheck', function () {
 
         rules.forEach(function (ruleName) {
             it('should configure ' + ruleName, function () {
-                expect(eslintConfigHolidaycheck).to.have.deep.property('rules.' + ruleName);
+                expect(eslintConfigHolidaycheck).to.have.nested.property('rules.' + ruleName);
             });
         });
     });
@@ -26,7 +26,7 @@ describe('eslint-config-holidaycheck', function () {
 
             if (isCoreRule) {
                 it('should only contain ' + ruleName + ' if it still exists upstream', function () {
-                    expect(eslintDefaults).to.have.deep.property('rules.' + ruleName);
+                    expect(eslintDefaults).to.have.nested.property('rules.' + ruleName);
                 });
             }
         });
@@ -37,7 +37,7 @@ describe('eslint-config-holidaycheck', function () {
 
         rules.forEach(function (ruleName) {
             it('should not have deprecated rule ' + ruleName + ' configured', function () {
-                expect(eslintConfigHolidaycheck).not.to.have.deep.property('rules.' + ruleName);
+                expect(eslintConfigHolidaycheck).not.to.have.nested.property('rules.' + ruleName);
             });
         });
     });
@@ -47,7 +47,7 @@ describe('eslint-config-holidaycheck', function () {
 
         environments.forEach(function (envName) {
             it('should configure environment ' + envName, function () {
-                expect(eslintConfigHolidaycheck).to.have.deep.property('env.' + envName);
+                expect(eslintConfigHolidaycheck).to.have.nested.property('env.' + envName);
             });
         });
     });
@@ -56,15 +56,15 @@ describe('eslint-config-holidaycheck', function () {
         var features = Object.keys(ecmaFeatures);
 
         features.forEach(function (featureName) {
-            expect(eslintConfigHolidaycheck).to.have.deep.property('parserOptions.ecmaFeatures.' + featureName);
+            expect(eslintConfigHolidaycheck).to.have.nested.property('parserOptions.ecmaFeatures.' + featureName);
         });
     });
 
     it('should configure the correct ecmaVersion', function () {
-        expect(eslintConfigHolidaycheck).to.have.deep.property('parserOptions.ecmaVersion', 5);
+        expect(eslintConfigHolidaycheck).to.have.nested.property('parserOptions.ecmaVersion', 5);
     });
 
     it('should configure the correct sourceType', function () {
-        expect(eslintConfigHolidaycheck).to.have.deep.property('parserOptions.sourceType', 'script');
+        expect(eslintConfigHolidaycheck).to.have.nested.property('parserOptions.sourceType', 'script');
     });
 });
