@@ -31,11 +31,11 @@
         "eslint": "^3.19.0"
     },
     "devDependencies": {
-        "chai": "3.5.0",
+        "chai": "4.0.2",
         "eslint": "3.19.0",
-        "espree": "3.4.2",
-        "mocha": "3.2.0",
-        "pr-log": "1.6.0"
+        "espree": "3.4.3",
+        "mocha": "3.4.2",
+        "pr-log": "2.0.0"
     },
     "keywords": [
         "eslint",
