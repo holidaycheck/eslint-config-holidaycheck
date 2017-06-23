@@ -181,6 +181,8 @@
         "no-magic-numbers": "off",
         "no-mixed-operators": "off",
         "array-bracket-spacing": [ "error", "always" ],
+        "array-bracket-newline": "off",
+        "array-element-newline": [ "error", { "multiline": true } ],
         "arrow-body-style": "off",
         "arrow-parens": "off",
         "arrow-spacing": "off",
@@ -226,8 +228,6 @@
         "max-statements-per-line": "off",
         "new-cap": "error",
         "new-parens": "error",
-        "newline-after-var": [ "off", "always" ],
-        "newline-before-return": "off",
         "newline-per-chained-call": "off",
         "object-curly-newline": "off",
         "object-curly-spacing": [ "error", "always" ],
@@ -275,7 +275,6 @@
         "func-call-spacing": [ "error", "never" ],
         "func-name-matching": "off",
         "line-comment-position": "off",
-        "lines-around-directive": [ "error", "always" ],
         "no-await-in-loop": "off",
         "no-compare-neg-zero": "error",
         "no-multi-assign": "error",
@@ -291,6 +290,15 @@
         "require-await": "off",
         "sort-keys": "off",
         "symbol-description": "off",
-        "template-tag-spacing": "off"
+        "template-tag-spacing": "off",
+        "for-direction": "off",
+        "no-buffer-constructor": "off",
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "always", "prev": "directive", "next": "*" },
+            { "blankLine": "any", "prev": "directive", "next": "directive" }
+        ],
+        "semi-style": [ "error", "last" ],
+        "switch-colon-spacing": [ "error", { "after": true, "before": false } ]
     }
 }
