@@ -182,7 +182,7 @@
         "no-mixed-operators": "off",
         "array-bracket-spacing": [ "error", "always" ],
         "array-bracket-newline": "off",
-        "array-element-newline": [ "error", { "multiline": true } ],
+        "array-element-newline": "off",
         "arrow-body-style": "off",
         "arrow-parens": "off",
         "arrow-spacing": "off",
