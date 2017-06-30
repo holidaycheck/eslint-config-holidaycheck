@@ -1,3 +1,18 @@
+## 0.12.0 (June 30, 2017)
+
+### Enhancements
+
+* Disallow shadowing or redeclaring globals (#40)
+
+### Dependency Upgrades
+
+* Update to ESLint 4.0 (#43)
+* Update dependencies (#41)
+
+### Build-Related
+
+* Add node 8 to travis build environments (#42)
+
 ## 0.11.0 (April 24, 2017)
 
 ### Dependency Upgrades
