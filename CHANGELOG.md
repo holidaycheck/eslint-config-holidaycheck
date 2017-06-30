@@ -1,3 +1,9 @@
+## 0.12.1 (June 30, 2017)
+
+### Bug Fixes
+
+* Disable array-element-newline rule
+
 ## 0.12.0 (June 30, 2017)
 
 ### Enhancements
