@@ -36,7 +36,9 @@ config.rules = assign({}, config.rules, {
     'prefer-rest-params': 'error',
     'prefer-numeric-literals': 'error',
     'symbol-description': 'error',
-    'template-tag-spacing': [ 'error', 'never' ]
+    'template-tag-spacing': [ 'error', 'never' ],
+    'implicit-arrow-linebreak': [ 'error', 'beside' ],
+    'lines-between-class-members': [ 'error', 'always' ]
 });
 
 module.exports = function () {
