@@ -299,6 +299,14 @@
             { "blankLine": "any", "prev": "directive", "next": "directive" }
         ],
         "semi-style": [ "error", "last" ],
-        "switch-colon-spacing": [ "error", { "after": true, "before": false } ]
+        "switch-colon-spacing": [ "error", { "after": true, "before": false } ],
+        "function-paren-newline": [ "error", "multiline" ],
+        "getter-return": [ "error", { "allowImplicit": false } ],
+        "implicit-arrow-linebreak": "off",
+        "lines-between-class-members": "off",
+        "multiline-comment-style": "off",
+        "max-classes-per-file": "off",
+        "max-lines-per-function":  [ "error", { "max": 50, "skipBlankLines": true, "skipComments": true } ],
+        "prefer-object-spread": "off"
     }
 }
