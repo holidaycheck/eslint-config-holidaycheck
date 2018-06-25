@@ -1,3 +1,14 @@
+## 0.13.0 (June 25, 2018)
+
+### Breaking Changes
+
+* Drop support for node versions < 8 ([#46](https://github.com/holidaycheck/eslint-config-holidaycheck/pull/46))
+
+### Dependency Upgrades
+
+* Update to eslint 5 ([#47](https://github.com/holidaycheck/eslint-config-holidaycheck/pull/47))
+* Update dev dependencies ([#45](https://github.com/holidaycheck/eslint-config-holidaycheck/pull/45))
+
 ## 0.12.1 (June 30, 2017)
 
 ### Bug Fixes
