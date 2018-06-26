@@ -300,7 +300,7 @@
         ],
         "semi-style": [ "error", "last" ],
         "switch-colon-spacing": [ "error", { "after": true, "before": false } ],
-        "function-paren-newline": [ "error", "multiline" ],
+        "function-paren-newline": "off",
         "getter-return": [ "error", { "allowImplicit": false } ],
         "implicit-arrow-linebreak": "off",
         "lines-between-class-members": "off",
