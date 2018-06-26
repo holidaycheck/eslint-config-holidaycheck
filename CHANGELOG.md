@@ -1,3 +1,9 @@
+## 0.13.1 (June 26, 2018)
+
+### Bug Fixes
+
+* Disable function-paren-newline and max-lines-per-function ([#48](https://github.com/holidaycheck/eslint-config-holidaycheck/pull/48))
+
 ## 0.13.0 (June 25, 2018)
 
 ### Breaking Changes
